@@ -1,0 +1,27 @@
+
+- var connectGoogleFont = true
+- var connectBootstrap = true
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Dasboard 
+
+    //- Google font
+    if ( connectGoogleFont )
+      link( href="https://fonts.gstatic.com" rel="preconnect")
+      link( href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet")
+    else
+      link( href="../_local/font.css" rel="stylesheet")
+    
+    //- Project css
+    link(href="header.css", rel="stylesheet")
+  
+  body
+    block content
+    
+
+    include _footer
+    script(src="main.js")
